@@ -1,5 +1,8 @@
 #pragma once
 #include "Elemento.h"
+#include "Laser.h"
+#include <vector>
+
 class JugadorTanque :
     public Elemento
 {
@@ -10,6 +13,8 @@ public:
     void MoverDerecha();
     void DispararLaser();
     void Draw();
+    std::vector<Laser> lasers;
 private:
+    double lastFireTime;
 };
 

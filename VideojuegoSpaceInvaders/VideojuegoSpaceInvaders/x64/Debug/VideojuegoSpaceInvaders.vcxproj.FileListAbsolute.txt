@@ -1,1 +1,2 @@
 C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\x64\Debug\Videojue.A0750282.Up2Date
+C:\Users\gabriel\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\x64\Debug\VideojuegoSpaceInvaders.vcxproj.CopyComplete

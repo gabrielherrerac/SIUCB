@@ -1,12 +1,8 @@
 ﻿  Juego.cpp
-  JugadorTanque.cpp
-C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\JugadorTanque.cpp(6,47): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\JugadorTanque.cpp(7,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\JugadorTanque.cpp(29,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
   VideojuegoSpaceInvaders.cpp
-C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders.cpp(8,27): warning C4838: la conversión de 'double' en 'unsigned char' requiere una conversión de restricción
-C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders.cpp(8,27): warning C4244: 'inicializando': conversión de 'double' a 'unsigned char'; posible pérdida de datos
+C:\Users\gabriel\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders.cpp(9,27): warning C4838: la conversión de 'double' en 'unsigned char' requiere una conversión de restricción
+C:\Users\gabriel\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders.cpp(9,27): warning C4244: 'inicializando': conversión de 'double' a 'unsigned char'; posible pérdida de datos
   Generando código...
-  VideojuegoSpaceInvaders.vcxproj -> C:\Users\gabri\source\repos\VideojuegoSpaceInvaders\x64\Debug\VideojuegoSpaceInvaders.exe
+  VideojuegoSpaceInvaders.vcxproj -> C:\Users\gabriel\source\repos\VideojuegoSpaceInvaders\VideojuegoSpaceInvaders\x64\Debug\VideojuegoSpaceInvaders.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

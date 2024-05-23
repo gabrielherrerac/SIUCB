@@ -3,6 +3,7 @@
 #include <iostream>
 #include <raylib.h>
 #include "Juego.h"
+
 int main()
 {
     Color grey = {0,58,11,0.8}; //Color fondo
@@ -16,6 +17,7 @@ int main()
     while(WindowShouldClose() == false)//bucle de proceso
     {
         SIJuego.HandleInput();
+        SIJuego.Update();
         BeginDrawing();
         ClearBackground(grey);
         SIJuego.Draw();

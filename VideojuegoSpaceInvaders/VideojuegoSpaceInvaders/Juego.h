@@ -9,6 +9,7 @@ public:
 	void Update();
 	void HandleInput();
 private:
+	void DeleteInactiveLasers();
 	JugadorTanque Tanque;
 };
 
