@@ -4,6 +4,7 @@
 #include <raylib.h>
 #include "Juego.h"
 
+
 int main()
 {
     Color grey = {0,58,11,0.8}; //Color fondo
@@ -13,6 +14,7 @@ int main()
     SetTargetFPS(60);
     
     Juego SIJuego; //Directorio de comandos
+    
 
     while(WindowShouldClose() == false)//bucle de proceso
     {
