@@ -2,7 +2,7 @@
 #include "JugadorTanque.h"
 #include "Obstaculo.h"
 #include "Alien.h"
-
+#include "Laser.h"
 using namespace std;
 class Juego
 {
@@ -18,9 +18,13 @@ private:
 	vector<Alien> CrearAliens();
 	void moverAliens();
 	void moverAbajoAliens(int distancia);
+	void AlienDispararLaser();
 	JugadorTanque Tanque;
 	vector<Obstaculo> obstaculos;
 	vector<Alien> aliens;
 	int direccionAlien;
+	vector<Laser> LasersAlien;
+	constexpr static float LaserAlienIntervl = 0.35;
+	float ultimoTiempodisparoAlien;
 };
 

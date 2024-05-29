@@ -6,6 +6,7 @@ Juego::Juego()
 	obstaculos = CrearObstaculo();
 	aliens = CrearAliens();
 	direccionAlien = 1;
+	ultimoTiempodisparoAlien = 0;
 }
 
 Juego::~Juego()
@@ -27,6 +28,9 @@ void Juego::Draw()
 	for (auto& Alien : aliens) {
 		Alien.Draw();
 	}
+	for (auto& laser : LasersAlien) {
+		laser.Draw();	
+	}
 }
 
 void Juego::Update()
@@ -36,6 +40,12 @@ void Juego::Update()
 		laser.Update();
 	}
 	moverAliens();
+
+	AlienDispararLaser();
+	for (auto& Laser : LasersAlien) {
+		Laser.Update();
+	}
+
 	DeleteInactiveLasers();
 	//std::cout << "Vector Size: " << Tanque.lasers.size(); 
 	//codigo para mostrar datos
@@ -66,6 +76,15 @@ void Juego::DeleteInactiveLasers()
 		else
 		{
 			++ it;
+		}
+	}
+	for (auto it = LasersAlien.begin(); it != LasersAlien.end();) {
+		if (!it->active) {
+			it = LasersAlien.erase(it);
+		}
+		else
+		{
+			++it;
 		}
 	}
 }
@@ -127,4 +146,17 @@ void Juego::moverAbajoAliens(int distancia)
 	for (auto& alien : aliens) {
 		alien.position.y += distancia;
 	}
+}
+
+void Juego::AlienDispararLaser()
+{
+	double tiempoActual = GetTime();
+	if (tiempoActual - ultimoTiempodisparoAlien >= LaserAlienIntervl && !aliens.empty()) {
+		int randomIndex = GetRandomValue(0, aliens.size() - 1);
+		Alien& alien = aliens[randomIndex];
+		LasersAlien.push_back(Laser({ alien.position.x + alien.ImagensAlien[alien.tipo - 1].width / 2,
+			alien.position.y + alien.ImagensAlien[alien.tipo - 1].height }, 6));
+		ultimoTiempodisparoAlien = GetTime();
+	}
+	
 }
